@@ -151,7 +151,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       end: job.end || "Present",
       description: reactToString(job.description),
     })),
-    skills: data.skills,
+    skills: data.skills.flatMap((cat) => cat.items),
     projects: data.projects.map((project) => ({
       title: project.title,
       techStack: project.techStack,
