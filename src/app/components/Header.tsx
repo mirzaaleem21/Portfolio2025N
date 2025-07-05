@@ -179,7 +179,7 @@ export function Header() {
         <h1 className="text-2xl font-bold" id="resume-name">
           {RESUME_DATA.name}
         </h1>
-        <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
+        <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px] leading-relaxed mb-4">
           {RESUME_DATA.about}
         </p>
 
@@ -198,13 +198,20 @@ export function Header() {
           personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
       </div>
-
       <Avatar
-        className="size-28"
+        className="size-56"
         src={RESUME_DATA.avatarUrl}
         alt={`${RESUME_DATA.name}'s profile picture`}
         fallback={RESUME_DATA.initials}
-      />
+      >
+        <Image
+          src={RESUME_DATA.avatarUrl}
+          alt="Profile"
+          width={224}
+          height={224}
+          className="size-56 rounded-full"
+        />
+      </Avatar>
     </header>
   );
 }

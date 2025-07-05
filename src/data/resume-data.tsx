@@ -1,237 +1,173 @@
 import type { ResumeData } from "@/lib/types";
-
+import CroppedSelf from "../images/CroppedSelf2.jpg";
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Mirza Abdul Aleem Baig",
+  initials: "MB",
+  location: "Houston, TX, CST",
+  locationLink: "https://www.google.com/maps/place/Houston,+TX",
+  about:"Software Engineer focused on AI-driven, full-stack, and data-centric solutions with a passion for building impactful, user-friendly products.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+Software Engineer with a strong focus on AI-powered automation and intelligent system design. Experienced in
+developing scalable web and mobile applications using ReactJS, Next.js, and React Native, with backend
+expertise in Node.js, Express.js, and PostgreSQL. Skilled in applying machine learning, NLP, and computer
+vision techniques using Python based development to drive actionable insights. Adept at building data pipelines,
+dashboards, and cloud-native solutions using Power BI, SQL, AWS, and Docker. Holds an M.S. in Computer
+Science from the University of Houston. Proven track record of delivering impactful software solutions and
+integrating AI technologies to solve real-world business challenges and drive innovation at scale.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: CroppedSelf.src,
+  personalWebsiteUrl: "https://github.com/mirzaaleem21",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "typemirza@gmail.com",
+    tel: "+1-346-586-3202",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/mirzaaleem21",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/mirza-aleem-512634126/",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "University of Houston",
+      degree: "M.S. in Computer Science, Specialization in Data Science",
+      start: "Aug 2023",
+      end: "May 2025",
+    },
+    {
+      school: "Osmania University",
+      degree: "B.E. in Computer Science & Engineering",
+      start: "Aug 2019",
+      end: "May 2023",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
-      end: null,
+      company: "Texas Mobile PCS LLC",
+      link: "",
+      badges: ["Power BI", "SQL", "ETL", "GCP", "Python"],
+      title: "Data Analyst",
+      start: "Jul 2024",
+      end: "May 2025",
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Built and maintained automated data systems for 300+ retail stores.
           <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
+            <li>Developed Power BI dashboards for real-time KPI tracking and fraud detection</li>
+            <li>Automated reporting using Power BI Automate and Power Query</li>
+            <li>Optimized SQL queries and procedures to reduce report load time by 25%</li>
+            <li>Contributed to ETL pipelines and scalable data models</li>
+            <li>Used Python (pandas, NumPy, scikit-learn) for trend forecasting and anomaly detection</li>
+            <li>Built utility bill management system using FastAPI, React, Supabase/PostgreSQL, and Google Document AI</li>
+            <li>Engineered vendor-specific parsers and dashboards for utility cost analytics and compliance</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      company: "ESF Labs",
+      link: "",
+      badges: ["React", "Node.js", "PostgreSQL", "Docker"],
+      title: "Software Developer",
+      start: "Nov 2022",
+      end: "May 2023",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Developed full-stack vendor management platform with modern DevOps practices.
           <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
+            <li>Designed UI with Figma and implemented modular frontends using React and Tailwind</li>
+            <li>Developed RESTful APIs with Node.js and PostgreSQL, optimizing backend performance</li>
+            <li>Added role-based authentication, logging, validation, and exception handling</li>
+            <li>Containerized apps with Docker and integrated GitHub Actions for CI/CD</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      company: "MEDFES (Healthcare Intelligence)",
+      link: "",
+      badges: ["React", "Redux", "Tailwind CSS", "EHR"],
+      title: "Frontend Developer",
+      start: "Jan 2022",
+      end: "Nov 2022",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+          Built frontend for EHR system to enhance healthcare data accessibility.
           <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
+            <li>Developed reusable UI components with React, Redux, and Tailwind CSS</li>
+            <li>Implemented dynamic rendering and component-level optimizations</li>
+            <li>Translated Figma designs into responsive, accessible layouts</li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    {
+      category: "Languages",
+      items: ["Python", "JavaScript", "TypeScript", "Java", "C/C++", "C#", "PHP", "HTML/CSS"]
+    },
+    {
+      category: "Frameworks/Technologies",
+      items: ["React", "Next.js", "React Native", "Node.js", "Express.js", "Redux", "Spring Framework"]
+    },
+    {
+      category: "Databases/Analytics/AI",
+      items: ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Power BI", "Microsoft Excel (Advanced)", "TensorFlow", "PyTorch", "NLP", "Computer Vision"]
+    },
+    {
+      category: "Cloud/DevOps",
+      items: ["AWS", "GCP", "Microsoft Azure", "Docker", "Kubernetes", "CI/CD"]
+    }
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "FinAI",
+      techStack: ["React", "Next.js", "Tailwind CSS", "Prisma", "Clerk"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "AI-powered finance platform automating workflows and improving analytics using Arcjet and Inngest.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "GitHub",
+        href: "https://github.com/mirzaaleem21",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "ChequeExtractor Pro",
+      techStack: ["React", "FastAPI", "Document AI", "OpenPyXL"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
+        "System for extracting cheque data and generating Excel reports, reducing manual effort by 80%.",
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "FaceSecure",
+      techStack: ["AWS Lambda", "S3", "Rekognition", "Cognito"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
+        "Facial recognition app for secure access with multi-factor authentication and KMS encryption.",
+    },
+    {
+      title: "Human Activity Recognition",
+      techStack: ["React Native", "TensorFlow", "Keras", "Flask"],
+      description:
+        "Mobile app that uses smartphone sensors to detect user activity in real time with ML predictions.",
+    },
+    {
+      title: "MRI Image Simulation",
+      techStack: ["Python", "NiBabel", "NumPy", "Matplotlib"],
+      description:
+        "Simulated brain MRIs at multiple field strengths using OASIS dataset and physics-based models.",
+    },
+    {
+      title: "Voice-Assisted E-Commerce App",
+      techStack: ["React", "Alan AI"],
+      description:
+        "Voice-enabled shopping app enhancing accessibility and user experience for e-commerce.",
     },
   ],
-} as const;
+};

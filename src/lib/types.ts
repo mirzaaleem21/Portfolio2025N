@@ -37,7 +37,10 @@ export interface ResumeData {
     end: string | null;
     description: string | React.ReactNode;
   }>;
-  skills: string[];
+  skills: Array<{
+    category: string;
+    items: string[];
+  }>;
   projects: Array<{
     title: string;
     techStack: string[];
@@ -102,7 +105,10 @@ export interface GraphQLMe {
   contact: GraphQLContact;
   education: GraphQLEducation[];
   work: GraphQLWork[];
-  skills: string[];
+  skills: Array<{
+    category: string;
+    items: string[];
+  }>;
   projects: GraphQLProject[];
 }
 

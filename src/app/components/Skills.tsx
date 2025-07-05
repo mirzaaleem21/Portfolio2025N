@@ -3,7 +3,12 @@ import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
-type Skills = readonly string[];
+type SkillCategory = {
+  category: string;
+  items: string[];
+};
+
+type Skills = SkillCategory[];
 
 interface SkillsListProps {
   skills: Skills;
@@ -11,22 +16,31 @@ interface SkillsListProps {
 }
 
 /**
- * Renders a list of skills as badges
+ * Renders a list of skills as badges, grouped by category
  */
 function SkillsList({ skills, className }: SkillsListProps) {
   return (
-    <ul
-      className={cn("flex list-none flex-wrap gap-1 p-0", className)}
-      aria-label="List of skills"
-    >
-      {skills.map((skill) => (
-        <li key={skill}>
-          <Badge className="print:text-[10px]" aria-label={`Skill: ${skill}`}>
-            {skill}
-          </Badge>
-        </li>
+    <div className={cn("space-y-4", className)}>
+      {skills.map((category) => (
+        <div key={category.category} className="space-y-2">
+          <h3 className="text-sm font-medium text-muted-foreground">
+            {category.category}
+          </h3>
+          <ul
+            className="flex list-none flex-wrap gap-1 p-0"
+            aria-label={`List of ${category.category} skills`}
+          >
+            {category.items.map((skill) => (
+              <li key={skill}>
+                <Badge className="print:text-[10px]" aria-label={`Skill: ${skill}`}>
+                  {skill}
+                </Badge>
+              </li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 
@@ -37,7 +51,7 @@ interface SkillsProps {
 
 /**
  * Skills section component
- * Displays a list of professional skills as badges
+ * Displays categorized professional skills as badges
  */
 export function Skills({ skills, className }: SkillsProps) {
   return (
